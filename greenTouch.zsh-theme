@@ -7,7 +7,7 @@ local current_time='%{$fg[green]%}[%{$reset_color%}%T% %{$fg[green]%}]%{$reset_c
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
 
-PROMPT="%(?,%{$fg[green]%}┌─╼${current_dir}${current_time} %{$reset_color%} ${git_branch}
+PROMPT="%(?,%{$fg[green]%}┌─╼${current_dir}%${current_time} %{$reset_color%} ${git_branch}
 %{$fg[green]%}└────╼%{$reset_color%} ,%{$fg[red]%}┌─╼${current_dir}%{$reset_color%} ${git_branch}
 %{$fg[green]%}└╼ %{$reset_color%} "
 
